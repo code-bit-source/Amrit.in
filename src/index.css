@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: font1;
+  src: url("./assets/BebasNeue-Regular.ttf");
+}
+@font-face {
+  font-family: font2;
+  src: url("./assets/Righteous-Regular.ttf");
+}
+
+html,body{
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
