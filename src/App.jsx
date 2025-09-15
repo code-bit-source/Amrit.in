@@ -36,6 +36,25 @@ const refresh =()=>{
     setfirst((prev) => !prev)
   }
 
+  const handleClick = () => {
+  const phoneNumber = "919315868930"; // <-- with country code, no +
+  const message = "Mujhe ek website banwani hai";
+
+  if (!phoneNumber) {
+    console.error("WhatsApp phone number is missing!");
+    return;
+  }
+
+  const encodedMessage = encodeURIComponent(message || "Hello 👋");
+  const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+  try {
+    window.open(whatsappURL, "_blank", "noopener,noreferrer");
+  } catch (error) {
+    console.error("Failed to open WhatsApp:", error);
+  }
+};
+
   return (
     <>
     <div className="relative w-screen min-h-screen overflow-hidden bg-zinc-400">
@@ -157,7 +176,7 @@ const refresh =()=>{
           </div>
 
           <div className="md:w-80 flex  items-center justify-between">
-            <h1 className="border-1  border-zinc-800 h-fit px-3 py-1 text-3xl font-[font1] w-fit rounded-4xl flex gap-1">
+            <h1 onClick={handleClick} className="border-1 z-20 relative cursor-pointer  border-zinc-800 h-fit px-3 py-1 text-3xl font-[font1] w-fit rounded-4xl flex gap-1">
               book now <CiLocationArrow1 className="text-3xl" />
             </h1>
 

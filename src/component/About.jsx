@@ -90,6 +90,8 @@ const About = () => {
           </div>
         </motion.div>
       </div>
+
+      {/* <button className="">Book now</button> */}
     </section>
   );
 };
