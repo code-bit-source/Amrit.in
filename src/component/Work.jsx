@@ -79,7 +79,9 @@ const Work = () => {
           ))}
         </div>
       </div>
-
+            {/* <div className="w-screen justify-center flex  mt-10">
+              <button className=" px-5 py-1 text-center font-[font2] uppercase bg-white text-black rounded-4xl text-2xl"> <a href="/projects">view all.</a> </button>
+            </div> */}
       {/* <img src="phone.png" alt="" className="rotate-3" /> */}
       <About />
     </section>

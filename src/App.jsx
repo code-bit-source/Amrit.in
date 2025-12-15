@@ -71,7 +71,7 @@ const refresh =()=>{
 
       {/* Nav Links */}
       <div className="hidden md:flex gap-10 lg:gap-20 text-sm md:text-md uppercase font-light">
-        <h1 className="px-2 py-1 font-normal rounded-4xl h-fit hover:text-red-700 transition">home</h1>
+        <h1 className="px-2 py-1 font-normal rounded-4xl underline h-fit hover:text-red-700 transition">home</h1>
         <h1 className="hover:text-red-700 transition">about</h1>
         <h1 className="hover:text-red-700 transition">contact us</h1>
         <h1 className="hover:text-red-700 transition underline cursor-pointer">readme</h1>
@@ -129,9 +129,9 @@ const refresh =()=>{
               <h1 onClick={handleHireMeClick} className="md:text-[1vw] z-10 text-md   uppercase border-1 border-zinc-800 rounded-4xl h-fit px-3 py-1 font-light">
                 hire me
               </h1>
-              <h1 className="md:text-[1vw] text-md   uppercase md:border-1 md:border-zinc-800 rounded-4xl h-fit px-3 py-1 font-light">
+              {/* <h1 className="md:text-[1vw] text-md   uppercase md:border-1 md:border-zinc-800 rounded-4xl h-fit px-3 py-1 font-light">
                 action
-              </h1>
+              </h1> */}
               <h1 className="md:text-[1vw] text-md   text-white bg-black uppercase border-1 border-zinc-800 rounded-4xl h-fit px-3 py-1">
                 projects
               </h1>
@@ -145,13 +145,13 @@ const refresh =()=>{
 
 {/* second  */}
           <div className="md:flex hidden  -rotate-1 justify-between md:mt-[2vw] w-full font-[font1] text-black absolute text-xl top-[10%] md:text-[2vw] px-5">
-            <h1>skills</h1>
-            <h1>Projects</h1>
+            <h1>Get</h1>
+            <h1>ready</h1>
             <h1 className="-mt-25 hidden md:block text-[5vw]">
               <GiJewelCrown />
             </h1>
-            <h1>services</h1>
-            <h1>Contact</h1>
+            <h1>for</h1>
+            <h1>growth</h1>
           </div>
 
 
@@ -164,9 +164,9 @@ const refresh =()=>{
 
 {/* bottom part  */}
 
-        <div className="w-full md:mt-[38vw] md:flex mt-[67vh] justify-between px-5">
-          <div className="w-72 mx-3">
-            <div className="flex text-center gap-3 text-xl">
+        <div className="w-full md:mt-[38vw] md:flex mt-[68vh] justify-between px-5">
+          <div className="w-72 hidden md:block mx-3">
+            <div className="flex text-center   gap-3 text-xl">
               <h1 className="text-center py-1">
                 <FaStar />
               </h1>
@@ -204,13 +204,13 @@ const refresh =()=>{
 
 
 
-<div id="cross" className="bg-zinc-400 w-screen min-h-screen -mt-5 ">
-    <div className="h-28 rotate-3 bg-zinc-900">
-    <h1>hello</h1>
+<div id="cross" className="bg-zinc-400   w-screen min-h-screen mt-0 md:-mt-1 ">
+    <div className="h-32 rotate-2 bg-zinc-900">
+    <h1></h1>
     </div>
 
 
-    <div className="h-28 -mt-20 -rotate-3 flex justify-center items-center bg-red-600">
+    <div className="h-32 -mt-30 -rotate-4 flex z-[20] relative justify-center items-center bg-red-600">
     <h1 className=" uppercase md:text-black text-white text-7xl font-[font2]">-feel what you work-</h1>
     </div>
 
@@ -220,6 +220,46 @@ const refresh =()=>{
 
 <Work />
 {/* <About /> */}
+
+<section className="relative bg-[#0b0b0b]  pb-20 px-6">
+  <div className="max-w-6xl mx-auto text-center">
+
+    {/* Section label */}
+    <p className="text-sm uppercase tracking-widest text-red-500 mb-4">
+      Project Inquiry
+    </p>
+
+    <h2 className="text-4xl md:text-5xl font-[font1] font-semibold text-white mb-6">
+      Let’s Discuss Your Project
+    </h2>
+
+    <p className="text-gray-400 text-lg font-[font2] leading-relaxed max-w-3xl mx-auto mb-12">
+      If you are planning to build a website, web application, or any custom
+      digital product, please share your requirements with us. Our team will
+      carefully review your submission and contact you to discuss the next
+      steps.
+    </p>
+
+    <button
+      onClick={() =>
+        window.open("https://project-form-rosy.vercel.app/", "_blank")
+      }
+      className="inline-flex items-center gap-3 border border-red-600 text-red-500 px-10 py-4 rounded-full text-base font-medium transition-all duration-300 hover:bg-red-600 hover:text-white hover:shadow-[0_8px_24px_rgba(220,38,38,0.35)]"
+    >
+      Submit Project Details
+      <span className="text-lg">→</span>
+    </button>
+
+    <p className="mt-10 text-sm text-gray-500">
+      Your information is kept confidential. We respond within 24–48 business hours.
+    </p>
+
+  </div>
+</section>
+
+
+
+
 <Footer />
 
 

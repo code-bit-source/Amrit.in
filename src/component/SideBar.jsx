@@ -54,10 +54,10 @@ const SideBar = ({ close }) => {
       {/* Nav Links */}
       <div className="flex flex-col items-center gap-6 sm:gap-8 mb-14">
         {[
-          { name: "Home", href: "#" },
-          { name: "About", href: "#" },
+          // { name: "Home", href: "#" },
+          // { name: "About", href: "#" },
           { name: "Projects", href: "https://github.com/code-bit-source?tab=repositories" },
-          { name: "Skills", href: "#" },
+          // { name: "Skills", href: "#" },
           { name: "Contact", href: "amritmr760@gmail.com" },
         ].map((item, i) => (
           <a
