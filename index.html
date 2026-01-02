@@ -1,11 +1,57 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- ================= BASIC META ================= -->
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="data:image/png;base64,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" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AMRIT. in</title>
+
+    <!-- ================= TITLE ================= -->
+    <title>Amrit Kumar | React Developer Portfolio</title>
+
+    <!-- ================= SEO META ================= -->
+    <meta
+      name="description"
+      content="Amrit Kumar ka professional React Developer portfolio. Modern React apps, frontend development, clean UI, performance-focused web solutions."
+    />
+    <meta
+      name="keywords"
+      content="Amrit Kumar, React Developer, Frontend Developer, JavaScript Developer, React Portfolio, Web Developer India"
+    />
+    <meta name="author" content="Amrit Kumar" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- ================= OPEN GRAPH (WhatsApp / FB / LinkedIn) ================= -->
+    <meta property="og:title" content="Amrit Kumar | React Developer" />
+    <meta
+      property="og:description"
+      content="Professional React Developer portfolio showcasing modern frontend projects and scalable web apps."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://amrit.in/" />
+    <meta property="og:image" content="https://amrit.in/preview.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- ================= TWITTER CARD ================= -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Amrit Kumar | React Developer" />
+    <meta
+      name="twitter:description"
+      content="React Developer portfolio with modern UI, clean code and performance-driven applications."
+    />
+    <meta name="twitter:image" content="https://amrit.in/preview.png" />
+
+    <!-- ================= CANONICAL URL ================= -->
+    <link rel="canonical" href="https://amrit.in/" />
+
+    <!-- ================= FAVICON ================= -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHL..."
+    />
   </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>

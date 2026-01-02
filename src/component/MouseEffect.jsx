@@ -29,7 +29,7 @@ const MouseEffect = () => {
       className="
         fixed hidden md:flex z-[9999] pointer-events-none
         -translate-x-1/2 -translate-y-1/2
-        w-28 h-28 rounded-full
+        w-8 h-8 rounded-full
         bg-black/80  
         shadow-[0_0_30px_rgba(0,0,0,0.6)]
         transition-transform duration-100 ease-out
@@ -47,7 +47,7 @@ const MouseEffect = () => {
           transition-transform duration-150 ease-out
         "
       >
-        <span className="leading-none font-light uppercase cursor-alias">Hire Me</span>
+        {/* <span className="leading-none font-light uppercase cursor-alias">Hire Me</span> */}
         <FiArrowUpRight className="mt-1 text-lg" />
       </div>
     </div>
