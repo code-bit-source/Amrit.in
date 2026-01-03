@@ -24,7 +24,7 @@ const Hero = ({ onHireClick, onWhatsAppClick }) => {
 
         <button
           onClick={onWhatsAppClick}
-          className="border px-4 justify-center items-center text-2xl h-10 uppercase text-center rounded-4xl text-white flex gap-2"
+          className="border relative z-8 px-4 justify-center items-center text-2xl h-10 uppercase text-center rounded-4xl text-white flex gap-2"
         >
           Hire now <CiLocationArrow1 />
         </button>

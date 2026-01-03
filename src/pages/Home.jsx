@@ -7,6 +7,7 @@ import Work from "../component/Work";
 import Footer from "../component/Footer";
 import MouseEffect from "../component/MouseEffect";
 import PageLoad from "../component/PageLoad";
+import { CTASection } from "../component/CTASection";
 // import CTASection from "../component/CTASection";
 
 const Home = () => {
@@ -23,12 +24,29 @@ const Home = () => {
     )}&body=${encodeURIComponent(body)}`;
   };
 
-  const handleWhatsApp = () => {
-    window.open(
-      "https://wa.me/919315868930?text=Mujhe ek website banwani hai",
-      "_blank"
-    );
-  };
+ const handleWhatsApp = () => {
+  const phoneNumber = "919315868930";
+
+  const message = `Hello Amrit,
+
+I am interested in getting a professional website developed for my business.
+
+Please share:
+• Project details & process
+• Estimated cost
+• Timeline
+
+Looking forward to your response.
+
+Thank you.`;
+
+  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    message
+  )}`;
+
+  window.open(url, "_blank");
+};
+
 
   return (
     <>
@@ -56,7 +74,7 @@ const Home = () => {
 
         <MouseEffect />
         <Work />
-        {/* <CTASection /> */}
+        <CTASection />
         <Footer />
       </div>
 

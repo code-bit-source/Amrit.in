@@ -19,7 +19,7 @@ const Navbar = ({ onHireClick, onMenuClick }) => {
       <div className="flex items-center gap-3">
         <button
           onClick={onHireClick}
-          className="hidden sm:block bg-black text-white px-4 py-1 rounded-4xl"
+          className="hidden sm:block relative z-8 uppercase bg-black text-white px-4 py-1 rounded-4xl"
         >
           hire me
         </button>
